@@ -10,6 +10,9 @@ Clone this Git repository and update `index.md`.
 Submit a Pull Request on GitHub or e-mail a diff to
 [jcs@jcs.org](mailto:jcs@jcs.org).
 
+To make it easier to track changes across paragraphs of text, please begin each
+sentence on its own line, as well as each markdown link.
+
 ## Testing changes
 
 If you are making extensive changes to the output and want to verify them in a
