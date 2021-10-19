@@ -51,9 +51,9 @@ TODO
 
 ### [NetBSD](https://www.netbsd.org/)
 
-One of the oldest BSD derivatives still under active development (having similar roots in 386BSD and 4.3BSD NET/2 to FreeBSD), NetBSD is best known for its focus on portability.
-(This set it apart from FreeBSD in the early days: FreeBSD was primarily interested in support for i386 machines, while NetBSD aimed to support as many different machines as possible.)
-Today, it's the only BSD derivative with any level of support for some unusual or historic machines, such as
+NetBSD is best known for its focus on portability.
+Today, it's the only BSD derivative with any level of support for some unusual
+or historic machines, such as
 [VAXen](https://wiki.netbsd.org/ports/vax/),
 [Motorola 68000-based Macintoshes](https://wiki.netbsd.org/ports/mac68k),
 and the
@@ -61,9 +61,14 @@ and the
 Other features that set it apart from the others include support for acting as a
 [Xen control domain](https://wiki.netbsd.org/ports/xen/)
 and a well-oiled framework for
-((cross-)compiling the system from source)[https://www.netbsd.org/docs/guide/en/chap-build.html]
+[(cross-)compiling the system from
+source](https://www.netbsd.org/docs/guide/en/chap-build.html)
 easily.
-NetBSD also maintains the (pkgsrc)[https://pkgsrc.org/] package system, which is similar to the other BSD derivatives' "ports trees", but supports many UNIX-like systems other than NetBSD, such as the other major BSDs, Linux, illumos, and macOS.
+NetBSD also maintains the
+[pkgsrc](https://pkgsrc.org/)
+package system, which is similar to the other BSD derivatives' "ports trees",
+but supports many UNIX-like systems other than NetBSD, such as the other major
+BSDs, Linux, illumos, and macOS.
 
 TODO
 
