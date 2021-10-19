@@ -35,7 +35,7 @@ While each of the projects do share code from time to time, they have diverged
 from each other decades ago and now differ widely in internal architecture and
 development.
 
-The 4 major BSD-based operating systems In alphabetical order:
+The 4 major BSD-based operating systems in alphabetical order:
 
 ### [DragonFlyBSD](https://www.dragonflybsd.org/)
 
@@ -45,9 +45,7 @@ TODO
 
 ### [FreeBSD](https://www.freebsd.org/)
 
-FreeBSD started as a descendant of
-[386BSD](https://en.wikipedia.org/wiki/386BSD)
-in in 1993, similar to NetBSD.
+FreeBSD started as a descendant of 386BSD in 1993.
 
 TODO
 
@@ -90,7 +88,7 @@ servers to the
 to giant
 [UltraSPARC servers](https://www.openbsd.org/sparc64.html)
 
-- Has a wide range of hardware support with drivers for
+- Has a wide range of hardware device support with drivers for
 [802.11 WiFi](https://man.openbsd.org/?query=wireless&apropos=1&sec=0&arch=default&manpath=OpenBSD-current)
 to
 [10Mbit to 10Gbit ethernet](https://man.openbsd.org/?query=ethernet&apropos=1&sec=0&arch=default&manpath=OpenBSD-current)
