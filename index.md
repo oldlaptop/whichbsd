@@ -116,6 +116,9 @@ from Intel, AMD, and Radeon ported from Linux
 While OpenBSD has a reputation for being lightweight, secure, and stable, it
 does usually perform slower than FreeBSD or NetBSD in network and system
 performance benchmarks.
+OpenBSD also supports fewer hardware platforms than NetBSD, but those that are
+supported tend to be supported a little more fully, with a hard requirement that
+releases must be built natively on real hardware.
 
 #### About
 
