@@ -113,6 +113,36 @@ to the latest
 [GPUs](https://man.openbsd.org/inteldrm)
 from Intel, AMD, and Radeon ported from Linux
 
+- Aims to provide mitigations against common security holes that can be made
+non-optional for the entire system without unacceptable performance loss or
+development overhead.
+Some examples:
+    - OpenBSD's
+      [memory allocation layer](https://man.openbsd.org/malloc.3)
+      can catch some (though certainly not all) of the same kinds of bugs that
+      tools such as valgrind do, but while running the program at full speed
+      or near-full-speed in production.
+    - The
+      [pledge](https://man.openbsd.org/pledge.2)
+      and
+      [unveil](https://man.openbsd.org/unveil.2)
+      facilities allow programs to restrict themselves to a "sandbox" with
+      limited access to system calls and the filesystem hierarchy.
+      Compared to other facilities with broadly similar functionality,
+      such as Linux's
+      [Seccomp BPF](https://www.kernel.org/doc/html/v4.16/userspace-api/seccomp_filter.html)
+      or FreeBSD's
+      [capsicum](https://www.freebsd.org/cgi/man.cgi?capsicum),
+      pledge and unveil require relatively little development effort to
+      integrate with existing programs.
+      (A very large fraction of OpenBSD's own programs, from network-facing
+      daemons to `ls`, use pledge and unveil.)
+    - OpenBSD uses lots of tricks to make common
+      [buffer overflow bugs](https://cwe.mitre.org/data/definitions/1218.html)
+      harder to exploit.
+      Some of these have (fortunately) been widely adopted, including by other
+      BSD derivatives, but others have not.
+
 While OpenBSD has a reputation for being lightweight, secure, and stable, it
 does usually perform slower than FreeBSD or NetBSD in network and system
 performance benchmarks.
